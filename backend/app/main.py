@@ -12,7 +12,10 @@ app = FastAPI(title="发票识别服务", version="1.0.0")
 
 app.add_middleware(
     CORSMiddleware,
-    allow_origins=["*"],
+    allow_origins=[
+        "https://www.canjiu.top",    # 你的前端域名
+        "https://canjiu.top",        # 可选，也允许无www的主域名
+    ],
     allow_credentials=True,
     allow_methods=["*"],
     allow_headers=["*"],
