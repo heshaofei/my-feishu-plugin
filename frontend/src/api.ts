@@ -1,6 +1,10 @@
 // api.ts
 // 后端 API 基础地址
+<<<<<<< HEAD
 export const API_BASE = 'https://www.canjiu.top/api';
+=======
+export const API_BASE = 'http://39.105.33.142:8000';
+>>>>>>> 20995d9eef52a5e395270eddfc6a202995ea2f56
 
 // 批量处理发票函数
 export const processInvoices = async (files: File[], appToken: string, tableId: string) => {
